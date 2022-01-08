@@ -1,0 +1,9 @@
+
+# ignore all text files
+*.txt
+
+# ignore repo specific files
+procfile
+replit
+
+

@@ -1,4 +1,4 @@
-# A Collaborative and Open source News bot
+# A Collaborative and Open Source News bot
 
 ## Let me tell you what this bot does:
 

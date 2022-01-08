@@ -18,7 +18,8 @@ def grabber(links, subtext):
         vote = subtext[dex].select('.score')
         if len(vote):
             votes = int(vote[0].getText().replace(' points', ''))
-            hn.append({'title': title, 'link': href, 'votes': votes})
+            if votes>100:
+                hn.append({'title': title, 'link': href, 'votes': votes})
     return hn
 
-pprint.pprint(over_hundred_votes(links, subtext))
+pprint.pprint(grabber(links, subtext))

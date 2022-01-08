@@ -18,6 +18,8 @@ async def on_message(message):
         await message.channel.send('Ping successful')
     if 'Hi' in message.content():
         await message.channel.send('Hello')
+    if 'coffee' in message.content.lower():
+        await message.channel.send('buy it yourself')
 
 client.run('TOKEN')
 

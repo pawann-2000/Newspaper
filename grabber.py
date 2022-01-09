@@ -20,6 +20,10 @@ def grabber(links, subtext):
             votes = int(vote[0].getText().replace(' points', ''))
             if votes>99:
                 hn.append({'title': title, 'link': href, 'votes': votes})
-    return hn
+    return sort_stories_by_votes(hn)
+
+#Sorting function to sort the votes in descending order
+def sort_stories_by_votes(hnlist):
+    return sorted(hnlist, key= lambda k:k['votes'], reverse=True)
 
 pprint.pprint(grabber(links, subtext))

@@ -1,5 +1,7 @@
+# imported os for input level commands
 import os
 
+# imported the standard discord module and the environment
 import discord
 from dotenv import load_dotenv
 
@@ -8,11 +10,15 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 
 client = discord.Client()
 
+# Event listeners for the bot
+
+
 @client.event
 async def on_ready():
     print(f'{client.user.name} has connected to Discord!')
 
-@client.event 
+
+@client.event
 async def on_message(message):
     if 'ping' in message.content.lower():
         await message.channel.send('Ping successful')
@@ -22,4 +28,3 @@ async def on_message(message):
         await message.channel.send('buy it yourself')
 
 client.run('TOKEN')
-

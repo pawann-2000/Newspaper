@@ -18,7 +18,7 @@ def grabber(links, subtext):
         vote = subtext[dex].select('.score')
         if len(vote):
             votes = int(vote[0].getText().replace(' points', ''))
-            if votes>100:
+            if votes>99:
                 hn.append({'title': title, 'link': href, 'votes': votes})
     return hn
 

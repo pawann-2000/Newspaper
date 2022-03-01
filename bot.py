@@ -26,5 +26,7 @@ async def on_message(message):
         await message.channel.send('Hello')
     if 'coffee' in message.content.lower():
         await message.channel.send('buy it yourself')
+    if 'News' in message.content.lower():
+        await message.channel.send('Open the internet')
 
 client.run('TOKEN')

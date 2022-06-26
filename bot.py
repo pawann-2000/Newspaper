@@ -1,4 +1,4 @@
-# imported os for input level commands
+# imported os for system level commands
 import os
 
 # imported the standard discord module and the environment

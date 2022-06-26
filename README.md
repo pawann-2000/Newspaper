@@ -1,5 +1,12 @@
 # A Collaborative and Open Source News bot
 
+## Dependencies
+- bs4 (Beautiful Soup).
+- pprint (Pretty Print).
+- requests (The name already says it).
+- discord (Discord integration).
+- dotenv (.env file handler)
+
 ## Let me tell you what this bot does:
 
 - Provides news for developers.

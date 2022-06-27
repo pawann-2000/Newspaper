@@ -1,4 +1,8 @@
-# imported some web scraping libs here
+########################################
+############ NEWS GRABBER ##############
+########################################
+
+# imported some web scraping packages here
 import requests
 from bs4 import BeautifulSoup
 import pprint
@@ -24,7 +28,7 @@ def grabber(links, subtext):
         if len(vote):
             votes = int(vote[0].getText().replace(' points', ''))
 
-            if votes > 99:
+            if votes > 50:
                 hn.append({'title': title, 'link': href, 'votes': votes})
 
     return sort_stories_by_votes(hn)

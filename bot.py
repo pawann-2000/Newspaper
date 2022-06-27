@@ -47,4 +47,4 @@ async def on_message(message):
         response = random.choice(news)
         await message.channel.send(response)
 
-bot.run('OTkwNjU3Mjk4ODA2NDkzMjA1.GvqcL5.FxjxncvPhkICmYuCwmF4BvwlVr_muTTaNy57hc')
+bot.run('TOKEN')

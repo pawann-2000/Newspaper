@@ -1,4 +1,4 @@
-# A Collaborative and Open Source News bot
+# An Awesome Collaborative and Open Source News bot
 
 ## Dependencies
 - bs4 (Beautiful Soup).
